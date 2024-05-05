@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: block;
+    background-color: blanchedalmond;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+
+}
+/*header*/
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 10px 0;
+}
+
+.banner {
+
+    height: 150px;
+    border: 5px solid green;
+
+}
+
+/*main index*/
+
+main .row {
+    display: flex;
+    justify-content: center;
+
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.bounce {
+    animation: bounce 1s ease-in-out infinite;
+    width: 200px;
+    height: 200px;
+}
+
+article a {
+    text-decoration: none;
+    color: #130a0a;
+}
+
+article {
+
+    border: 1px solid green;
+    border-radius: 10%;
+    padding: 30px;
+    margin-top: 10px;
+    background-color: #0dba2a;
+
+}
+
+.encuadre{
+    display: flex;
+        justify-content: center;
+}
+
+ .index {
+    display: inline-block;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    
+}
+
+.index:hover {
+    transition: 250ms;
+    background-color: #f07321;
+}
+
+/*navegador*/
+
+nav {
+    background-color: #333;
+
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+li {
+    margin: 0;
+    padding: 10px;
+}
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+li:hover {
+    transition: 250ms;
+    background-color: #0dba2a;
+}
+
+
+/*cuentos*/
+
+.padding {
+
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    flex-direction: row;
+    align-items: center;
+    background-color: #e7da22;
+    border-radius: 10px;
+
+}
+
+
+
+#cuentos {
+    display: flex;
+    justify-content: space-evenly;
+
+    flex-direction: row;
+    align-items: center;
+
+}
+
+#cuentos article:hover {
+    transition: 250ms;
+    background-color: #f07321;
+}
+
+p {
+    padding: 50px;
+}
+
+fieldset {
+    margin: 50px;
+    padding: 10px;
+}
+
+input {
+    padding: 5px 10px;
+    margin: 0 50px;
+    display: flex;
+    justify-content: baseline;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+h2,
+h3,
+article,
+footer {
+    text-align: center;
+    text-decoration: none;
+
+}
+
+footer {
+
+    padding: 40px 0 0 0;
+
+}
