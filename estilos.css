@@ -5,11 +5,12 @@
 
 body {
     display: block;
-    background-color: blanchedalmond;
+    background-color: rgb(234, 156, 38);
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: black;
 
 }
+
 /*header*/
 
 header {
@@ -26,7 +27,7 @@ header {
 
 }
 
-/*main index*/
+/*main inicio*/
 
 main .row {
     display: flex;
@@ -54,8 +55,8 @@ main .row {
 
 .bounce {
     animation: bounce 1s ease-in-out infinite;
-    width: 200px;
-    height: 200px;
+    width: 50px;
+    height: 50px;
 }
 
 article a {
@@ -63,22 +64,38 @@ article a {
     color: #130a0a;
 }
 
+.autores{
+    display: flex;
+        justify-content: space-evenly;
+      align-items: center;
+      padding: 20px;
+        
+
+}
+
+
 article {
 
     border: 1px solid green;
     border-radius: 10%;
-    padding: 30px;
+    padding: 10px;
     margin-top: 10px;
     background-color: #0dba2a;
+    width: fit-content;
+  
 
 }
 
-.encuadre{
+/* videos de youtube*/
+.encuadre {
     display: flex;
-        justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    
 }
 
- .index {
+.index {
     display: inline-block;
     flex-direction: row;
     justify-content: space-evenly;
@@ -87,7 +104,7 @@ article {
     align-items: center;
     width: 200px;
     height: 200px;
-    
+
 }
 
 .index:hover {
@@ -99,6 +116,9 @@ article {
 
 nav {
     background-color: #333;
+    position: sticky;
+    z-index: 999;
+    box-shadow: #3b1902 5px 0 5px;
 
 }
 
@@ -126,10 +146,9 @@ li:hover {
 }
 
 
-/*cuentos*/
+/*cuentos para ver y escuchar*/
 
 .padding {
-
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -156,28 +175,31 @@ li:hover {
     background-color: #f07321;
 }
 
+
+
 p {
     padding: 50px;
+
 }
+
+p::first-letter{
+    background-color: red;
+    font-weight: bold;
+}
+
+
 
 fieldset {
-    margin: 50px;
+    display: inline-block;
+    margin: 70px;
     padding: 10px;
-}
+    background-color: hwb(131 32% 49%);
+    width: 100px;
+    }
 
-input {
-    padding: 5px 10px;
-    margin: 0 50px;
-    display: flex;
-    justify-content: baseline;
-}
-
-.input {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
+.button {
+    padding: 20px;
+    margin: 20px;
 }
 
 
@@ -188,10 +210,25 @@ footer {
     text-align: center;
     text-decoration: none;
 
+
 }
 
-footer {
 
-    padding: 40px 0 0 0;
+
+footer {
+    padding: 0;
+    margin-bottom: 25px;
+
+}
+
+
+
+.caja_redes {
+    display: flex;
+    justify-content: space-evenly;
+
+    flex-direction: row;
+    align-items: center;
+
 
 }
