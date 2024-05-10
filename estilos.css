@@ -8,7 +8,6 @@ body {
     background-color: rgb(234, 156, 38);
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: black;
-
 }
 
 /*header*/
@@ -21,22 +20,17 @@ header {
 }
 
 .banner {
-
     height: 150px;
     border: 5px solid green;
-
 }
 
 /*main inicio*/
-
 main .row {
     display: flex;
     justify-content: center;
-
     flex-direction: row;
     align-items: center;
     position: relative;
-
 }
 
 @keyframes bounce {
@@ -64,26 +58,20 @@ article a {
     color: #130a0a;
 }
 
-.autores{
+.autores {
     display: flex;
-        justify-content: space-evenly;
-      align-items: center;
-      padding: 20px;
-        
-
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
 }
 
-
 article {
-
     border: 1px solid green;
     border-radius: 10%;
     padding: 10px;
     margin-top: 10px;
     background-color: #0dba2a;
     width: fit-content;
-  
-
 }
 
 /* videos de youtube*/
@@ -92,7 +80,7 @@ article {
     justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
-    
+    flex-wrap: wrap;
 }
 
 .index {
@@ -104,7 +92,6 @@ article {
     align-items: center;
     width: 200px;
     height: 200px;
-
 }
 
 .index:hover {
@@ -113,13 +100,11 @@ article {
 }
 
 /*navegador*/
-
 nav {
     background-color: #333;
     position: sticky;
     z-index: 999;
     box-shadow: #3b1902 5px 0 5px;
-
 }
 
 ul {
@@ -134,7 +119,6 @@ li {
     padding: 10px;
 }
 
-
 a {
     text-decoration: none;
     color: #fff;
@@ -144,7 +128,6 @@ li:hover {
     transition: 250ms;
     background-color: #0dba2a;
 }
-
 
 /*cuentos para ver y escuchar*/
 
@@ -156,18 +139,22 @@ li:hover {
     align-items: center;
     background-color: #e7da22;
     border-radius: 10px;
-
 }
 
-
-
-#cuentos {
+#cuentos,
+.autores {
     display: flex;
     justify-content: space-evenly;
-
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+}
 
+#cuentos article {
+    width: 250px;
+    display: flex;
+    align-items: center;
 }
 
 #cuentos article:hover {
@@ -175,31 +162,20 @@ li:hover {
     background-color: #f07321;
 }
 
-
-
 p {
     padding: 50px;
-
 }
 
-p::first-letter{
-    background-color: red;
+p::first-letter {
     font-weight: bold;
+    font-family: "Inknut Antiqua", serif;
+    font-size: 28px;
 }
-
-
-
-fieldset {
-    display: inline-block;
-    margin: 70px;
-    padding: 10px;
-    background-color: hwb(131 32% 49%);
-    width: 100px;
-    }
 
 .button {
     padding: 20px;
     margin: 20px;
+    text-align: right;
 }
 
 
@@ -209,26 +185,83 @@ article,
 footer {
     text-align: center;
     text-decoration: none;
-
-
 }
-
-
 
 footer {
     padding: 0;
     margin-bottom: 25px;
-
 }
-
-
 
 .caja_redes {
     display: flex;
     justify-content: space-evenly;
-
     flex-direction: row;
     align-items: center;
+}
 
+.formulario {
+    display: flex;
+    margin: 0 auto;
+    width: 650px;
+    text-align: left;
+}
 
+.campos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.campo {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.campo label {
+    width: 150px;
+}
+
+.campo input,
+.campo textarea {
+    width: 400px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    body {
+        font-size: 14px;
+    }    
+
+    main {
+        margin: 0 50px;
+    }
+
+    .formulario {
+        width: 100%;
+    }
+
+    .campo {
+        flex-direction: column;
+    }
+
+    .campo input,
+    .campo textarea {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        font-size: 13px;
+    }    
+
+    .formulario {
+        width: 100%;
+    }
+
+    .autores {
+        flex-direction: column;
+    }
 }
