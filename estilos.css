@@ -13,7 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fuente divertida y adecuada para niños */
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
 }
 
 /* Estilos de cuerpo */
@@ -34,7 +34,7 @@ header {
 
 header .logo {
     font-size: 2rem;
-    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fuente divertida */
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
 }
 
 /* Navegación */
