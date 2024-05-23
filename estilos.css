@@ -1,267 +1,182 @@
+/* Paleta de colores */
+:root {
+    --color-background: #fef9ef;
+    --color-primary: #ffbf69;
+    --color-secondary: #cbf3f0;
+    --color-accent: #f28482;
+    --color-text: #333;
+    --color-heading: #222;
+}
+
+/* Reset de estilos */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fuente divertida y adecuada para niños */
 }
 
+/* Estilos de cuerpo */
 body {
-    display: block;
-    background-color: rgb(234, 156, 38);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: black;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
 }
 
-/*header*/
-
+/* Encabezado */
 header {
+    background-color: var(--color-primary);
+    color: var(--color-heading);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fuente divertida */
+}
+
+/* Navegación */
+.nav-bar ul {
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 10px 0 10px 0;
+    list-style: none;
 }
 
-.banner {
-    height: 150px;
-    border: 5px solid green;
+.nav-bar ul li {
+    margin: 0 1rem;
 }
 
-/*main inicio*/
-main .row {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    position: relative;
-}
-
-@keyframes bounce {
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-20px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
-.bounce {
-    animation: bounce 1s ease-in-out infinite;
-    width: 50px;
-    height: 50px;
-}
-
-article a {
+.nav-bar ul li a {
+    color: var(--color-heading);
     text-decoration: none;
-    color: #130a0a;
+    font-weight: bold;
 }
 
-.autores {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 20px;
+.nav-bar ul li a:hover {
+    color: var(--color-accent);
 }
 
-article {
-    border: 1px solid green;
-    border-radius: 10%;
-    padding: 10px;
-    margin-top: 10px;
-    background-color: #0dba2a;
-    width: fit-content;
+/* Sección principal */
+main {
+    padding: 2rem;
 }
 
-/* videos de youtube*/
+main h2 {
+    color: var(--color-heading);
+    margin-bottom: 1rem;
+}
+
+/* Artículos */
 .encuadre {
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    align-items: center;
     flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
 }
 
 .index {
-    display: inline-block;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-left: 10px;
-    padding-right: 10px;
-    align-items: center;
-    width: 200px;
-    height: 200px;
-}
-
-.index:hover {
-    transition: 250ms;
-    background-color: #f07321;
-}
-
-/*navegador*/
-nav {
-    background-color: #333;
-    position: sticky;
-    z-index: 999;
-    box-shadow: #3b1902 5px 0 5px;
-}
-
-ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    padding: 0;
-}
-
-li {
-    margin: 0;
-    padding: 10px;
-}
-
-a {
-    text-decoration: none;
-    color: #fff;
-}
-
-li:hover {
-    transition: 250ms;
-    background-color: #0dba2a;
-}
-
-/*cuentos para ver y escuchar*/
-
-.padding {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    flex-direction: row;
-    align-items: center;
-    background-color: #e7da22;
-    border-radius: 10px;
-}
-
-#cuentos,
-.autores {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 150px;
-}
-
-#cuentos article {
-    width: 250px;
-    display: flex;
-    align-items: center;
-}
-
-#cuentos article:hover {
-    transition: 250ms;
-    background-color: #f07321;
-}
-
-p {
-    padding: 50px;
-}
-
-p::first-letter {
-    font-weight: bold;
-    font-family: "Inknut Antiqua", serif;
-    font-size: 28px;
-}
-
-.button {
-    padding: 20px;
-    margin: 20px;
-    text-align: right;
-}
-
-
-h2,
-h3,
-article,
-footer {
+    background-color: var(--color-secondary);
+    padding: 1rem;
+    border-radius: 8px;
     text-align: center;
-    text-decoration: none;
+    width: 30%;
 }
 
-footer {
-    padding: 0;
-    margin-bottom: 25px;
+.index h4 {
+    color: var(--color-heading);
+    margin-bottom: 0.5rem;
 }
 
-.caja_redes {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    align-items: center;
+/* Formulario */
+form {
+    background-color: var(--color-secondary);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
 }
 
-.formulario {
-    display: flex;
-    margin: 0 auto;
-    width: 650px;
-    text-align: left;
-}
-
-.campos {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+fieldset {
+    border: none;
 }
 
 .campo {
-    padding: 10px;
-    display: flex;
-    justify-content: space-around;
+    margin-bottom: 1rem;
 }
 
 .campo label {
-    width: 150px;
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--color-heading);
 }
 
 .campo input,
 .campo textarea {
-    width: 400px;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--color-accent);
+    border-radius: 4px;
 }
 
-@media only screen and (max-width: 1000px) {
+/* Botones */
+.button input {
+    background-color: var(--color-accent);
+    color: var(--color-background);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
-    body {
-        font-size: 14px;
-    }    
+.button input:hover {
+    background-color: var(--color-primary);
+}
 
-    main {
-        margin: 0 50px;
+/* Pie de página */
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-heading);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer .caja_redes {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer .caja_redes a {
+    color: var(--color-heading);
+    font-size: 1.5rem;
+}
+
+footer .caja_redes a:hover {
+    color: var(--color-accent);
+}
+
+footer p {
+    margin-top: 1rem;
+}
+
+/* Animaciones */
+.bounce {
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
     }
-
-    .formulario {
-        width: 100%;
+    40% {
+        transform: translateY(-15px);
     }
-
-    .campo {
-        flex-direction: column;
-    }
-
-    .campo input,
-    .campo textarea {
-        width: 100%;
+    60% {
+        transform: translateY(-10px);
     }
 }
 
-@media only screen and (max-width: 600px) {
 
-    body {
-        font-size: 13px;
-    }    
 
-    .formulario {
-        width: 100%;
-    }
-
-    .autores {
-        flex-direction: column;
-    }
-}
