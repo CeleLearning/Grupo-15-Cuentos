@@ -6,130 +6,319 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grupo 15 | Cuentos para niños</title>
     <link rel="icon" href="./src/img/Logos/logo_icon.png">
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+
+    <!-- style -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    
+    <!-- Swiper style -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
 </head>
 
 <body>
-    <header>
-        <div class="logo">Historias de Tiki</div>
+    <!-- header -->
+    <header class="header" id="header">
         <nav class="nav-bar">
-            <ul>
-                <li><a href="#"><i class="fas fa-home"></i> Inicio</a></li>
-                <li><a href="../Grupo-15-Cuentos/pages/cuentos.html"><i class="fas fa-book"></i> Biblioteca de Cuentos</a></li>
-                <li><a href="../Grupo-15-Cuentos/pages/acceso_autores.html"><i class="fas fa-users"></i> Nuestros Autores</a></li>
-                <li><a href="#"><i class="fas fa-user-plus"></i> Crear Cuenta</a></li>
-                <li><a href="#"><i class="fas fa-sign-in-alt"></i> Iniciar Sesión</a></li>
-            </ul>
-        </nav>  
+            <a href="#" class="nav-logo">Historias de Tiki</a>
+            <div class="nav-menu">
+                <ul class="nav-lista">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="ri-home-heart-fill"></i>
+                            <span>¡Vamos a empezar!</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="ri-booklet-line"></i>
+                            <span>Explora los cuentos</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="ri-file-text-line"></i>
+                            <span>¡Juguemos y aprendamos!</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="ri-edit-box-fill"></i>
+                            <span>Sobre nosotros</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="ri-mail-send-line"></i>
+                            <span>Háblanos</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="nav-act">
+                <!-- Icono de búsqueda -->
+                <i class="ri-search-line search-button" id="search-button"></i>
+                <!-- Icono de inicio de sesión -->
+                <i class="ri-user-line login-button" id="login-button"></i>
+            </div>
+        </nav>
     </header>
 
-    <main>
-        <section id="inicio">
-            <div class="row">
-                <h2>Cuentos para niños <br> de Historias Tiki </h2>
+    <!-- Formulario de búsqueda -->
+    <div class="buscador" id="buscador-container">
+        <form action="" class="buscador-form">
+            <i class="ri-search-line buscador-icono" id="buscador-icono"></i>
+            <input type="search" placeholder="Busca tus cuentos favoritos aquí" class="buscador-input">
+        </form>
+
+        <i class="ri-close-line buscador-close" id="buscador-close"></i>
+    </div>
+
+    <!-- Formulario de inicio de sesión -->
+    <div class="registro-usuario" id="registro-container">
+        <form action="" class="registro-form">
+            <h3 class="registro-titulo">¿Listo para la aventura?</h3>
+            <div class="registro-opciones">
+                <div>
+                    <label for="registro-email" class="registro-label">Email</label>
+                    <input type="email" placeholder="Ingresar email" id="registro-email" class="registro-input">
+                </div>
+                <div>
+                    <label for="registro-contraseña" class="registro-label">Contraseña</label>
+                    <input type="password" placeholder="Ingresar contraseña" id="registro-contraseña" class="registro-input">
+                </div>
+            </div>
+            <div>
+                <span class="nuevo-usuario">¿Queres unirte a la magia?<a href="#">Registrarse</a></span>
+                <a href="#" class="recuperar-contraseña">Recuperar contraseña</a>
+                <button type="submit" class="registro-boton boton">Iniciar Sesión</button>
+            </div>
+        </form>
+        <i class="ri-close-line registro-close" id="registro-close"></i>
+    </div>
+
+    <!-- MAIN -->
+    <main class="main">
+        <!-- pagina inicio -->
+        <section class="inicio section" id="Inicio">
+            <div class="inicio_container container grid">
+                <div class="inicio_data">
+                    <h1 class="inicio_titulo">
+                        Explorar Libros & <br>
+                        Descubre Nuevas Aventuras
+                    </h1>
+
+                    <p class="inicio_descripcion">
+                        Bienvenidos a nuestro mundo mágico de cuentos y fantasía. Aquí encontrarás historias emocionantes, personajes encantadores y aventuras que te llevarán a lugares inimaginables. ¡Prepárate para sumergirte en la lectura y dejar volar tu imaginación!
+                    </p>
+
+                    <a href="#" class="boton"> ¡Vamos a la Aventura!</a>
+                </div>
+
+                <div class="inicio_imagenes">
+                    <div class="inicio_swiper swiper">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <article class="inicio_article swiper-slide">
+                                    <img src="img/caperucita.jpg" alt="image" class="inicio_img">
+                                </article>
+                                <article class="inicio_article swiper-slide">
+                                    <img src="img/lobo.jpg" alt="image" class="inicio_img">
+                                </article>
+                                <article class="inicio_article swiper-slide">
+                                    <img src="img/elgato.jpg" alt="image" class="inicio_img">
+                                </article>
+                                <article class="inicio_article swiper-slide">
+                                    <img src="img/vaca.jpg" alt="image" class="inicio_img">
+                                </article>
+                                <article class="inicio_article swiper-slide">
+                                    <img src="img/lo3cerditos.jpg" alt="image" class="inicio_img">
+                                </article>
+                            </div>
+                        </div> 
+                </div>
             </div>
         </section>
 
-        <section>
-            <p>¡Bienvenidos a nuestro encantador mundo de Cuentos de Hadas en Español! Nuestro canal de YouTube está
-                dedicado a compartir historias cautivadoras para niños de 3 a 6 años, diseñadas para encender su imaginación y transportarlos a lugares mágicos.
-                Únete a nosotros mientras nos embarcamos en emocionantes aventuras, donde valientes héroes, hermosas princesas y traviesas criaturas cobran vida a través del poder de la narración. Nuestra colección de cuentos en español cautivará
-                las mentes jóvenes y fomentará el amor por el lenguaje y el aprendizaje.</p>
-        </section>
-
-        <div>
-            <a href="http://www.youtube.com/@cuentosparaninos_historiastiki">
-                <h2> Algunos de nuestros cuentos para ver y escuchar </h2>
-            </a>
+       <!-- Sección de libros destacados -->
+        <section class="destacados section" id="destacados">
+        <h2 class="section_titulo">Libros Destacados</h2>
         </div>
 
-        <section class="encuadre">
-            <article class="index">
-                <h4>Rosario y la música</h4>
-                <a href="../grupo_15_cuentos/pages/rosario_y_el_piano.html">
-                    <iframe width="200" height="150" src="https://www.youtube.com/embed/rogidBdQok0?si=qiZdvbqDNcLQzVTn"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </a>
-            </article>
+        <div class="destacados_container container">
+            <div class="destacados_swiper">
+                <div>
+                    <article class="destacados_card">
+                        <img src="img/soldadito.jpg" alt="El Soldadito De Plomo" class="destacados_img">
+                    
+                        <h2 class="destacados_titulo">El Soldadito De Plomo</h2>
+                    
+                        <div class="destacados_icons">
+                            <button class="destacados_icono">
+                                <i class="ri-heart-add-line button"></i>
+                            </button>
+                        </div>
+                    
+                        <p class="destacados_descripcion">
+                            "El Soldadito de Plomo" es un cuento clásico de Hans Christian Andersen que narra la historia de un pequeño soldado de plomo y su amor por una bailarina de papel.
+                        </p>
+                    
+                        <div class="destacados_opciones">
+                            <button class="destacados_boton boton">Escuchar cuento</button>
+                            <button class="destacados_boton boton">Ver video</button>
+                        </div>
+                    </article>
 
-            <article class="index">
-                <h4>Eco, el barco pesquero</h4>
-                <a href="../grupo_15_cuentos/pages/eco_el_barco.html">
-                    <iframe width="200" height="150" src="https://www.youtube.com/embed/MW3EC2jT9ls?si=ZJ6L1agNOv63Az75"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </a>
-            </article>
+                    <article class="destacados_card">
+                        <img src="img/pinocho.jpg" alt="Pinocho" class="destacados_img">
+                    
+                        <h2 class="destacados_titulo">Pinocho</h2>
+                    
+                        <div class="destacados_icons">
+                            <button class="destacados_icono">
+                                <i class="ri-heart-add-line button"></i>
+                            </button>
+                        </div>
+                    
+                        <p class="destacados_descripcion">
+                            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae esse, cumque laborum molestias itaque odio sequi! Exercitationem omnis nulla fuga, excepturi temporibus nisi optio tenetur, suscipit autem quisquam, neque animi."
+                        </p>
+                    
+                        <div class="destacados_opciones">
+                            <button class="destacados_boton boton">Escuchar cuento</button>
+                            <button class="destacados_boton boton">Ver video</button>
+                        </div>
+                    </article>
 
-            <article class="index">
-                <h4>El Dragón del Bosque</h4>
-                <a href="../grupo_15_cuentos/pages/el_dragon.html">
-                    <iframe width="200" height="150" src="https://www.youtube.com/embed/INzvvIRw6A4?si=xVf2xfKMIREQDLbq"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </a>
-            </article>
+                    <article class="destacados_card">
+                        <img src="img/vaca.jpg" alt="vaca que leia" class="destacados_img">
+                    
+                        <h2 class="destacados_titulo">La vaca que leia libros</h2>
+                    
+                        <div class="destacados_icons">
+                            <button class="destacados_icono">
+                                <i class="ri-heart-add-line button"></i>
+                            </button>
+                        </div>
+                    
+                        <p class="destacados_descripcion">
+                            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae esse, cumque laborum molestias itaque odio sequi! Exercitationem omnis nulla fuga, excepturi temporibus nisi optio tenetur, suscipit autem quisquam, neque animi."
+                        </p>
+                    
+                        <div class="destacados_opciones">
+                            <button class="destacados_boton boton">Escuchar cuento</button>
+                            <button class="destacados_boton boton">Ver video</button>
+                        </div>
+                    </article>
+
+                    
+                </div>
+            </div>
+        </div>
         </section>
 
-        <section>
-            <h2>¡Completá el siguiente formulario, y a la brevedad te contactaremos!</h2>
-            <form method="GET" action="" class="formulario">
-                <fieldset class="campos">
-                    <legend>Datos Personales</legend>
-                    <p class="campo">
-                        <label for="Nombre">Nombre</label>
-                        <input id="Nombre" name="name" type="text" maxlength="15" placeholder="Ingrese su nombre" required>
-                    </p>
-                    <p class="campo">
-                        <label for="Apellido">Apellido</label>
-                        <input id="Apellido" name="lastname" type="text" maxlength="15" placeholder="Ingrese su apellido">
-                    </p>
-                    <p class="campo">
-                        <label for="Email">Email</label>
-                        <input id="Email" name="mail" type="email" placeholder="ejemplo@gmail.com">
-                    </p>
-                    <p class="campo">
-                        <label for="Edad">Edad</label>
-                        <input id="Edad" name="age" type="number" placeholder="Edad">
-                    </p>
-                    <p class="campo">
-                        <label for="Comentarios">Otros Comentarios</label>
-                        <textarea name="Comentarios" id="Comentarios" cols="30" rows="10" placeholder="Dejanos tu mensaje, por favor"></textarea>
-                    </p>
-                    <p class="button">
-                        <input type="reset" value="Limpiar campos">
-                        <input type="submit" value="Enviar Contacto">
-                    </p>
-                </fieldset>
-            </form>
-        </section>
+      <!-- Sección de cuentos infantiles para aprender -->
+<section class="audiolibros section" id="audiolibros">
+    <div class="container">
+        <h2 class="section_titulo">Audiolibros Infantiles</h2>
+
+        <div class="audiolibros_container grid">
+            <!-- Primer audiolibro -->
+            <article class="audiolibro_card">
+                <img src="img/lo3cerditos.jpg" alt="Audiolibro 1" class="audiolibro_img">
+                <h3 class="audiolibro_titulo">El Cuento de los Animales</h3>
+                <p class="audiolibro_descripcion">
+                    Un cuento interactivo sobre la amistad entre animales del bosque.
+                </p>
+                <div class="audiolibro_botones">
+                    <button class="audiolibro_boton boton">Escuchar audiolibro</button>
+                </div>
+            </article>
+
+            <!-- Segundo audiolibro -->
+            <article class="audiolibro_card">
+                <img src="img/aventuras.jpg" alt="Audiolibro 2" class="audiolibro_img">
+                <h3 class="audiolibro_titulo">Aventuras con amigos</h3>
+                <p class="audiolibro_descripcion">
+                    Un cuento sobre un viaje emocionante con personajes divertidos.
+                </p>
+                <div class="audiolibro_botones">
+                    <button class="audiolibro_boton boton">Escuchar audiolibro</button>
+                </div>
+            </article>
+
+            <!-- Tercer audiolibro -->
+            <article class="audiolibro_card">
+                <img src="img/dormir.jpg" alt="Audiolibro 3" class="audiolibro_img">
+                <h3 class="audiolibro_titulo">Para terminar el día</h3>
+                <p class="audiolibro_descripcion">
+                    Un cuento para ir a dormir felices.
+                </p>
+                <div class="audiolibro_botones">
+                    <button class="audiolibro_boton boton">Escuchar audiolibro</button>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- juegos -->
+ <!-- Sección de juegos infantiles -->
+<section class="juegos section" id="juegos">
+    <div class="container">
+        <h2 class="section_titulo">Juegos Infantiles</h2>
+
+        <div class="juegos_container grid">
+            <!-- Primer juego -->
+            <article class="juego_card">
+                <img src="img/memoria.jpg" alt="Juego de Memoria" class="juego_img">
+                <h3 class="juego_titulo">Juego de Memoria</h3>
+                <p class="juego_descripcion">
+                    Encuentra las parejas de cartas en el menor tiempo posible.
+                </p>
+                <div class="juego_botones">
+                    <button class="juego_boton boton">Jugar</button>
+                </div>
+            </article>
+
+            <!-- Segundo juego -->
+            <article class="juego_card">
+                <img src="img/puzzle.jpg" alt="Rompecabezas" class="juego_img">
+                <h3 class="juego_titulo">Rompecabezas</h3>
+                <p class="juego_descripcion">
+                    Arma el rompecabezas para descubrir la imagen oculta.
+                </p>
+                <div class="juego_botones">
+                    <button class="juego_boton boton">Jugar</button>
+                </div>
+            </article>
+
+            <!-- Tercer juego -->
+            <article class="juego_card">
+                <img src="img/colorear.jpg" alt="Juego de Colorear" class="juego_img">
+                <h3 class="juego_titulo">Juego de Colorear</h3>
+                <p class="juego_descripcion">
+                    Colorea dibujos divertidos y dale vida a tus personajes favoritos.
+                </p>
+                <div class="juego_botones">
+                    <button class="juego_boton boton">Jugar</button>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+
+        
+
     </main>
 
-    <footer>
-        <section>
-            <h2>Seguinos en nuestras redes para enterarte todas las novedades!!!</h2>
-            <div class="caja_redes">
-                <a href="https://www.instagram.com/"><i class="fab fa-instagram bounce"></i></a>
-                <a href="https://www.facebook.com/"><i class="fab fa-facebook bounce"></i></a>
-                <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp bounce"></i></a>
-                <a href="https://www.youtube.com/channel/UC-5_JMXv3dkspLbujduThMQ"><i class="fab fa-youtube bounce"></i></a>
-                <a href="#inicio" class="bounce"><i class="fas fa-arrow-up"></i></a>
-            </div>
-            <h3>¡Si querés visitarnos y encontrarte con libros y mucho más, te esperamos!</h3>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.625299897208!2d-58.41326322566431!3d-34.58834647295982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca824b97e16f%3A0x7b07e06e44019afb!2sAlto%20Palermo%20Shopping%2C%20Av.%20Sta.%20Fe%203253%2C%20C1425%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1710826980323!5m2!1ses-419!2sar"
-                width="200" height="200" style="border-radius: 50px;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade" alt="Ubicación"></iframe>
-        </section>
-        <p>Todos los derechos reservados | GRUPO 15 | CAC</p>
-    </footer>
-    
-    <script src="./main.js"></script>
+    <!-- swiper js -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- javascrip -->
+    <script src="js/main.js"></script>
 </body>
-
 </html>
