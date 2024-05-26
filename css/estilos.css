@@ -398,72 +398,85 @@ img {
 .shadow-header {
     box-shadow: 0 2px 16px hsla(0, 0%, 0%, .1);
 }
-
-/* sesion destacados */
-/* Estilos para los elementos destacados de libros */
-.destacados_container {
-    max-width: 800px;
-    margin: 0 auto;
+/*  destacados */
+  
+.seccion-libros {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
-.destacados_swiper {
-    max-width: 600px; 
-    margin: 0 auto; 
+.categoria {
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
-
-.destacados_card {
-    background-color: var(--color-cont);
-    border: 1px solid var(--color-borde);
-    padding: 1rem;
-    margin-bottom: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    transition: transform 0.2s ease;
-}
-
-.destacados_card:hover {
-    transform: translateY(-4px);
-}
-
-.destacados_img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.destacados_titulo {
-    font-family: var(--fuente-secundaria);
-    font-size: var(--tamaño-fuente-h2);
-    font-weight: var(--fuente-semi-negra);
+.categoria h2 {
     color: var(--color-titulo);
-    margin-bottom: 0.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-.destacados_descripcion {
-    font-size: var(--tamaño-fuente-normal);
-    color: var(--color-texto);
-    margin-bottom: 1rem;
-}
-
-.destacados_opciones {
+.libros {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.destacados_boton {
+.libro {
+    flex: 1 1 calc(25% - 20px); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.libro:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); 
+}
+
+.libro img {
+    width: 150px; 
+    height: 225px; 
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.libro h3 {
+    color: var(--color-titulo);
+    font-size: 1.2rem; 
+    margin: 0.5rem 0; 
+}
+
+.libro p {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.5;
+    margin-bottom: 10px; 
+}
+
+/* Estilo para Leer */
+.ver-mas {
     background-color: var(--color-primario);
-    color: var(--blanco);
+    color: #fff;
     border: none;
-    padding: 0.5rem 1rem;
-    font-size: var(--tamaño-fuente-pequeño);
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 3px;
     cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.2s ease;
+    transition: background-color 0.3s ease;
 }
 
-.destacados_boton:hover {
-    background-color: hsl(34, 100%, 50%);
+/* Cambio de color*/
+.ver-mas:hover {
+    background-color: navajowhite;
 }
 
 
