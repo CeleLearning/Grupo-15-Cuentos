@@ -98,7 +98,7 @@ img {
     height: auto;
 }
 
-/* reutilizable css */
+
 .container {
     max-width: 1220px;
     margin-inline: 1.5rem;
@@ -349,8 +349,9 @@ img {
 }
 
 .inicio_container {
-    padding-top: 2rem;
-    row-gap: 2.5rem;
+    padding-top: 5rem;
+    row-gap: 2.9rem;
+    background-color: var(--color-cont);
 }
 
 .inicio_data {
@@ -398,18 +399,24 @@ img {
 .shadow-header {
     box-shadow: 0 2px 16px hsla(0, 0%, 0%, .1);
 }
+
+
+
 /*  destacados */
   
 .seccion-libros {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    background-color: var(--color-cont);
+    
 }
 
 .categoria {
     padding: 15px;
     border-radius: 10px;
     margin-bottom: 20px;
+    
 }
 
 .categoria h2 {
@@ -485,7 +492,7 @@ img {
 /* Estilos para la sección de audiolibros infantiles */
 .audiolibros {
     padding: 5rem 1rem;
-    background-color: var(--color-cont);
+    
     text-align: center;
 }
 
@@ -494,6 +501,7 @@ img {
     font-size: var(--tamaño-fuente-h2);
     color: var(--color-titulo);
     margin-bottom: 2rem;
+    margin-top: -64px;
 }
 
 .audiolibros_container {
@@ -635,15 +643,6 @@ img {
         padding-inline: 3rem;
     }
 
-    .descuentos_img-1,
-    .descuentos_img-2 {
-        width: 140px;
-    }
-
-    .nuev_tarjeta {
-        flex-direction: column;
-    }
-
     .footer_data {
         grid-template-columns: 1fr;
         row-gap: 2rem;
@@ -654,10 +653,6 @@ img {
 
     .destacado_card {
         width: 290px;
-    }
-
-    .nuev_tarjeta {
-        width: 390px;
     }
 }
 
@@ -686,8 +681,7 @@ img {
         margin-inline: auto;
     }
 
-    .inicio_container,
-    .descuentos_container {
+    .inicio_container{
         grid-template-columns: 420px;
         justify-content: center;
     }
@@ -751,54 +745,6 @@ img {
 
     .inicio_data {
         width: initial;
-    }
-
-    .destacado_container {
-        padding-top: 2rem; 
-    }
-
-    .destacado_titulo {
-        font-size: var(--tamaño-fuente-h3);
-    }
-
-    .descuentos_container {
-        grid-template-columns: 615px 500px;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .descuentos_data {
-        order: 1;
-    }
-
-    .descuentos_data,
-    .descuentos_titulo {
-        text-align: initial;
-    }
-
-    .descuentos_descripcion {
-        margin-bottom: 3.5rem;
-    }
-
-    .descuentos_img-1,
-    .descuentos_img-2 {
-        width: 300px;
-    }
-
-    .nuev_container {
-        padding-top: 2rem;
-     }
-
-    .nuev_tarjeta {
-        padding: 1.5rem;
-    }
-
-    .nuev_img {
-        width: 120px;
-    }
-
-    .nuev_titulo {
-        font-size: var(--tamaño-fuente-h3);
     }
 
     .ivitacion_bg {
