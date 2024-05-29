@@ -239,6 +239,7 @@ img {
   padding: 2rem 1.5rem;
   border: 2px solid var(--color-borde);
   row-gap: 1.25rem;
+  
 }
 
 .registro-titulo {
@@ -367,9 +368,10 @@ img {
   .swiper-slide img {
     max-width: 100%;
     height: auto;
-    object-fit: cover; /* Ajusta el tamaño de la imagen */
+    object-fit: cover; 
     border-radius: 10px;
     transition: transform 0.4s;
+    margin-right: 50rem;
   }
   
   .swiper-slide-active,
@@ -450,7 +452,10 @@ img {
   border-radius: 3px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: 21px;
 }
+
 
 /* Cambio de color*/
 .ver-mas:hover {
@@ -580,9 +585,9 @@ img {
 
 .footer {
   background-color: var(--color-secundario);
-  color: var(--color-texto);
+  color: var(--blanco);
   text-align: center;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .footer_copy p {
@@ -617,11 +622,6 @@ img {
         padding-inline: 3rem;
     }
 
-    .footer_data {
-        grid-template-columns: 1fr;
-        row-gap: 2rem;
-    }
-
    .nav-lista {
 
     justify-content: space-between;
@@ -649,6 +649,8 @@ img {
     .registro-form {
         width: 500px;
         justify-self: center;
+        margin-top: 59px;
+        display: grid;
     }
 
     .buscador-close,
@@ -695,6 +697,15 @@ img {
         grid-template-columns: repeat(2, max-content);
         justify-content: space-between;
     }
+
+    .buscador-close,
+    .registro-close {
+        width: max-content;
+        top: 4rem;
+        left: 0;
+        right: 0;
+        margin-inline: auto;
+    }
 }
 
 @media screen and (min-width: 1150px) {
@@ -711,7 +722,16 @@ img {
     }
 
     .footer {
-        padding-block: 6rem 3rem;
+      padding-block: 1rem 1rem;
+    }
+
+    .buscador-close,
+    .registro-close {
+        width: max-content;
+        top: 4rem;
+        left: 0;
+        right: 0;
+        margin-inline: auto;
     }
 }
 
@@ -737,5 +757,14 @@ img {
     .inicio_article,
     .inicio_img {
         width: 295px;
+    }
+
+    .buscador-close,
+    .registro-close {
+      width: max-content;
+      top: 3rem;
+      left: 84%;
+      right: 0;
+      margin-inline: auto;
     }
 }
