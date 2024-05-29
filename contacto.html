@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/contacto.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header" id="header">
+        <nav class="nav-bar">
+            <a href="#inicio" class="nav-logo">Historias de Tiki</a>
+            <div class="nav-menu">
+                <ul class="nav-lista">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                            <i class="ri-home-heart-fill"></i>
+                            <span>¡Vamos a empezar!</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="ri-booklet-line"></i>
+                            <span>Explora los cuentos</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="ri-file-text-line"></i>
+                            <span>audiolibros</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacto.html" class="nav-link">
+                            <i class="ri-edit-box-fill"></i>
+                            <span>Contactanos</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-act">
+                <!-- Icono de búsqueda -->
+                <i class="ri-search-line search-button" id="search-button"></i>
+                <!-- Icono de inicio de sesión -->
+                <i class="ri-user-line login-button" id="login-button"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contacto-banner">
+            <h1>Contáctanos</h1>
+            <p>Sobre Nosotros / Contáctanos</p>
+        </section>
+
+        <section class="contacto-info">
+            <h2>Escríbenos</h2>
+            <div class="contacto-detalles">
+                <div class="contacto-item">
+                    <i class="ri-map-pin-line"></i>
+                    <br>
+                    Av. Central 1234,Buenos aires
+                </div>
+                <div class="contacto-item">
+                    <i class="ri-mail-send-line"></i>
+                    <address>
+                        historiasdetiki@gmail.com
+                    </address>
+                </div>
+                <div class="contacto-item">
+                    <i class="ri-phone-fill"></i>
+                    <p>+54 9 01020304</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-y-form">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52563.439742599156!2d-58.46221526831101!3d-34.57342642873582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59c771eb933%3A0x6b3113b596d78c69!2sPalermo%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1717007805498!5m2!1ses-419!2sar" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contacto-form">
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Ingresa tu nombre" required>
+                    <input type="email" name="email" placeholder="Ingresa tu email" required>
+                    <input type="text" name="phone" placeholder="Ingresa tu teléfono" required>
+                    <input type="text" name="subject" placeholder="Asunto">
+                    <textarea name="message" placeholder="¿Cómo podemos ayudarte?" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer class="footer">
+        <span class="footer_copy">
+            <p>&copy; Desarrollado por el Grupo 15 - Codo a Codo.</p>
+        </span>
+    </footer>
+   
+    <!-- javascrip -->
+    <script src="js/main.js"></script>
+</body>
+</html>
