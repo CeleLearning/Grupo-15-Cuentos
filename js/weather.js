@@ -9,7 +9,7 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
 
     if (nameCity.value === '' || nameCountry.value === '') {
-        showError('Ambos campos son obligatorios...');
+        showError('Obligatorio...');
         return;
     }
 
@@ -26,7 +26,7 @@ function callAPI(city, country) {
             if (dataJSON.cod === '404') {
                 showError('Ciudad no encontrada');
             } else {
-                clearHTML(); // Implement this function or remove the reference
+                clearHTML(); // Limpiar el error
                 showWeather(dataJSON);
             }
         })
@@ -38,14 +38,14 @@ function callAPI(city, country) {
 function showWeather(data) {
     const { name, weather: { temp, temp_min, temp_max }, weather: [arr] } = data;
 
-    const degrees = kelvinToCentigrade(temp); // Implement this function or remove the reference
-    const min = kelvinToCentigrade(temp_min); // Implement this function or remove the reference
-    const max = kelvinToCentigrade(temp_max); // Implement this function or remove the reference
+    const degrees = kelvinToCentigrade(temp); // Cambio de Kelvin a centígrados
+    const min = kelvinToCentigrade(temp_min); // Cambio de Kelvin a centígrados
+    const max = kelvinToCentigrade(temp_max); // Cambio de Kelvin a centígrados
 
     const content = document.createElement('div');
     content.innerHTML = `
         <h5>Clima en ${name}</h5>
-        <img src="https://openweathermap.org/img/wn/${arr.icon}10d@2x.png" alt="icon">
+        <img src="https://openweathermap.org/img/wn/${arr.icon}@2x.png" alt="icon">
         <h2>${degrees}°C</h2>
         <p>Max.: ${max}°</p>
         <p>Min.: ${min}°</p>
