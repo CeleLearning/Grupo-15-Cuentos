@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="icon" href="img/logo_icon.png">
     <link rel="stylesheet" href="css/contacto.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
 </head>
@@ -12,7 +14,7 @@
     <!-- header -->
     <header class="header" id="header">
         <nav class="nav-bar">
-            <a href="#inicio" class="nav-logo">Historias de Tiki</a>
+            <a href="index.html" class="nav-logo">Historias de Tiki</a>
             <div class="nav-menu">
                 <ul class="nav-lista">
                     <li class="nav-item">
@@ -22,13 +24,13 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="index.html#seccion-libros" class="nav-link">
                             <i class="ri-booklet-line"></i>
                             <span>Explora los cuentos</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="index.html#audiolibros" class="nav-link">
                             <i class="ri-file-text-line"></i>
                             <span>audiolibros</span>
                         </a>
@@ -36,6 +38,7 @@
                     <li class="nav-item">
                         <a href="contacto.html" class="nav-link">
                             <i class="ri-edit-box-fill"></i>
+
                             <span>Contactanos</span>
                         </a>
                     </li>
@@ -53,6 +56,12 @@
 
     <main>
         <section class="contacto-banner">
+            <img class="bounce" alt="perfil" src="img/logo_icon.png">
+            <style>
+                img {
+                    height: 130px;
+                }
+            </style>
             <h1>Contáctanos</h1>
             <p>Sobre Nosotros / Contáctanos</p>
         </section>
@@ -80,7 +89,10 @@
 
         <section class="map-y-form">
             <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52563.439742599156!2d-58.46221526831101!3d-34.57342642873582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59c771eb933%3A0x6b3113b596d78c69!2sPalermo%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1717007805498!5m2!1ses-419!2sar" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52563.439742599156!2d-58.46221526831101!3d-34.57342642873582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59c771eb933%3A0x6b3113b596d78c69!2sPalermo%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1717007805498!5m2!1ses-419!2sar"
+                    width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="contacto-form">
                 <form action="#" method="post">
@@ -92,17 +104,46 @@
                     <button type="submit">Enviar</button>
                 </form>
             </div>
-            
+
         </section>
-    </main>
+   
+
+    <section class="weather-content">
+        <h2>Buscador del clima</h2>
+        <div class="result">
+            <p>Agrega ciudad y país</p>
+            <!--<h5>Clima en Bogotá</h5>
+            <img src="" alt="">
+            <h2>28°C</h2>
+            <p>Max.: 29°</p>
+            <p>Min.: 27°</p>-->
+        </div>
+        <form action="" method="POST" class="get-weather">
+            <input type="text" name="city" id="city" placeholder="Ciudad...">
+            <select name="" id="country">
+                <option disabled selected value="">Selecciona el país...</option>
+                <option value="AR">Argentina</option>
+                <option value="CO">Colombia</option>
+                <option value="CR">Costa Rica</option>
+                <option value="ES">España</option>
+                <option value="US">Estados Unidos</option>
+                <option value="MX">México</option>
+                <option value="PE">Perú</option>
+
+            </select>
+            <input type="submit" name="" id="" value="Get Weather">
+        </form>
+    </section>
+</main>
 
     <footer class="footer">
         <span class="footer_copy">
             <p>&copy; Desarrollado por el Grupo 15 - Codo a Codo.</p>
         </span>
     </footer>
-   
+
     <!-- javascrip -->
     <script src="js/main.js"></script>
 </body>
+
 </html>

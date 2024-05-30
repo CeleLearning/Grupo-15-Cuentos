@@ -58,7 +58,10 @@ button {
     outline: none;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     color: var(--color-titulo);
     font-family: var(--fuente-secundaria);
     font-weight: 500;
@@ -95,12 +98,39 @@ a {
     color: var(--color-primario);
     font-weight: bold;
     font-family: var(--fuente-secundaria);
-    
+
 }
 
 .nav-menu {
     display: flex;
     align-items: center;
+}
+
+/* Animaciones */
+.bounce {
+    animation: bounce 1.5s infinite;
+
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-15px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+
+
 }
 
 .nav-lista {
@@ -143,7 +173,8 @@ a {
     background-color: var(--color-secundario);
     color: var(--blanco);
     text-align: center;
-    padding: 6rem 4rem 6rem; ;
+    padding: 6rem 4rem 6rem;
+    ;
     margin-top: 6%;
 }
 
@@ -249,12 +280,40 @@ a {
     transform: scale(1.05);
 }
 
+/* Buscador de clima */
+
+
+.weather-content{
+    
+    max-width: 500px;
+    text-align: center;
+    padding: 20px 20px 50px;
+    margin: 10% auto 0;
+    background-color: hsl(34, 100%, 85%);
+    border-radius: 9px;
+
+}
+.weather-content h2{
+    margin-bottom: 10px;
+    
+}
+.result{
+    margin-bottom: 8%;
+}
+
+.result p{
+    margin: 5px 0 5px;
+}
+
+
+
 /* Footer */
 .footer {
     background-color: var(--color-secundario);
     color: var(--blanco);
     text-align: center;
     padding: 2rem;
+    margin-top: 1rem;
 }
 
 .footer_copy p {
@@ -280,5 +339,5 @@ a {
 }
 
 .icon {
-     color: var(--color-primario);
+    color: var(--color-primario);
 }
