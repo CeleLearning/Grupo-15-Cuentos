@@ -72,31 +72,34 @@
                 <div class="contacto-item">
                     <i class="ri-map-pin-line"></i>
                     <br>
-                    Av. Central 1234,Buenos aires
+                    Tortuguitas,Buenos aires
                 </div>
                 <div class="contacto-item">
                     <i class="ri-mail-send-line"></i>
                     <address>
-                        historiasdetiki@gmail.com
+                        mskubrak79@gmail.com
                     </address>
                 </div>
                 <div class="contacto-item">
                     <i class="ri-phone-fill"></i>
-                    <p>+54 9 01020304</p>
+                    <p>+54 9 1122370</p>
                 </div>
             </div>
         </section>
 
         <section class="map-y-form">
             <div class="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52563.439742599156!2d-58.46221526831101!3d-34.57342642873582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59c771eb933%3A0x6b3113b596d78c69!2sPalermo%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1717007805498!5m2!1ses-419!2sar"
-                    width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+               <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105249.84827479126!2d-58.82926955996698!3d-34.47605899991303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc988e12661a07%3A0xa51def392da2533!2sTortuguitas%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1720658072673!5m2!1ses-419!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+
+            
+
             <!--FORMULARIO DE CONTACTO-->
             <div class="contacto-form">
-                <form method="GET" action="#" method="post">
+                <form method="GET" action="#">
                     <input type="text" name="name" placeholder="Ingresa tu nombre" required>
                     <input type="email" name="email" placeholder="Ingresa tu email" required>
                     <input type="text" name="phone" placeholder="Ingresa tu teléfono" required>
@@ -107,35 +110,25 @@
             </div>
 
         </section>
-   
-
-    <section class="weather-content">
-        <h2>Buscador del clima</h2>
-        <div class="result">
-            <p>Agrega ciudad y país</p>
-            <!--<h5>Clima en Buenos Aires</h5>
-            <img src="" alt="">
-            <h2>28°C</h2>
-            <p>Max.: 29°</p>
-            <p>Min.: 27°</p>-->
+  
+    <section id="cats">
+    <div id="vote-options" class="vote-options">
+        <button onClick="vote(1)" >Me gusta (<i>lo verás en color verde)</i></button>
+        <button onClick="vote(-1)">No me gusta (<i>lo verás en color rojo)</i></button>
+        <button onClick="showHistoricVotes()">Mirá tu voto acá</button>
+    
+        <div>
+            <img id="image-to-vote-on"></img>
         </div>
-        <form action="" method="POST" class="get-weather">
-            <input type="text" name="city" id="city" placeholder="Ciudad...">
-            <select name="" id="country">
-                <option disabled selected value="">Selecciona el país...</option>
-                <option value="AR">Argentina</option>
-                <option value="CO">Colombia</option>
-                <option value="CR">Costa Rica</option>
-                <option value="ES">España</option>
-                <option value="US">Estados Unidos</option>
-                <option value="MX">México</option>
-                <option value="PE">Perú</option>
-                <option value="PO">Polonia</option>
-
-            </select>
-            <input type="submit" name="" id="" value="Get Weather">
-        </form>
+    
+    </div>
+    
+    <div id="vote-results" class="vote-results">
+        <button onClick="showVoteOptions()">Volver</button>
+        <div id="grid" class="imgrid">
+    </div>
     </section>
+
 </main>
 
     <footer class="footer">
@@ -146,7 +139,7 @@
 
     <!-- javascrip -->
     <script src="js/main.js"></script>
-    <script src="js/weather.js"></script>
+    <script src="../Grupo-15-Cuentos/js/apiCat.js"></script>
 </body>
 
 </html>

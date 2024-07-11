@@ -280,31 +280,70 @@ a {
     transform: scale(1.05);
 }
 
-/* Buscador de clima */
 
+/*API CATS*/
 
-.weather-content{
-    
-    max-width: 500px;
-    text-align: center;
-    padding: 20px 20px 50px;
-    margin: 10% auto 0;
-    background-color: hsl(34, 100%, 85%);
-    border-radius: 9px;
+#cats {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: none;
+    transform: scale(1.1);
+    height: 200px;
+    border: 10px;
 
-}
-.weather-content h2{
-    margin-bottom: 10px;
-    
-}
-.result{
-    margin-bottom: 8%;
-}
-
-.result p{
-    margin: 5px 0 5px;
+    button {
+        background-color: var(--color-secundario);
+        color: var(--negro);
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.1s, transform 0.1s;
+        margin-left: 60px;
+    }
 }
 
+img {
+    height: 320px;
+    justify-items: center;
+    border-radius: 15px;
+}
+
+#image-to-vote-on {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.red {
+    background-color: hsl(34, 100%, 60%);
+    border-color: red;
+    padding: 1%;
+    border-style: solid;
+    border-width: medium;
+}
+
+.green {
+    background-color: hsl(34, 100%, 60%);
+    border-color: green;
+    padding: 1%;
+    border-style: solid;
+    border-width: medium;
+}
+
+
+.imgrid {
+    display: flex;
+    background-color: blanchedalmond;
+    margin-left: 60px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
 
 
 /* Footer */
